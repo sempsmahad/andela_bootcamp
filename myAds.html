@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>  
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="buy and sell cars at your own desired price">
+  <meta name="keywords" content="cars sale,cars,used cars,olx for cars,cheap cars,automart,auto mart,cheap cars in uganda">
+<meta name="author" content="muhammad ssempala">
+<title>AutoMart | MyAds</title>
+<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<header id="branding">
+  <div class="container">
+    <h1>AutoMart</h1>
+ 
+  <nav>
+  <ul id="nav_bar">
+      <li class="btn active"><a href="home.html">Home</a></li>
+      <li><a class="btn" href="myAds.html">My Ads</a></li>
+      <li><a class="btn" href="orders.html">Orders</a></li>
+      <li><a class="btn" href="#favourites">Favourites</a></li>
+      <li><a class="btn" href="#profile">Profile</a></li>
+  </ul>
+</nav>
+</div>
+</header>
+
+<section>
+  <div class="container">
+   <h1>ADS</h1>
+  <ul id="dataList"></ul>
+  <div class="templates">
+    <div id="listItem">
+      <div class="row1">
+        <div class="title"></div>
+        <div class="amount"></div>
+      </div>
+      <div class="row2"><div class="description"></div></div>
+    </div>
+  </div>
+</div>
+</section>
+<footer>
+    <p>AutoMart , Andela Rwanda,copyright &copy; 2019</p>
+  </footer>
+<script>
+    // Add active class to the current button (highlight it)
+    var header = document.getElementById("nav_bar");
+    var btns = header.getElementsByTagName("li");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function() {
+      var current = document.getElementsByClassName("active");
+      current[0].className = current[0].className.replace(" active", "");
+      this.className += " active";
+      });
+    }
+// handle the list items 
+    var dataObject = JSON.parse(dataJSON);
+var listItemString = $('#listItem').html();
+
+dataObject.forEach(buildNewList);
+
+function buildNewList(item, index) {
+  var listItem = $('<li>' + listItemString + '</li>');
+  var listItemTitle = $('.title', listItem);
+  listItemTitle.html(item.FeeType);
+  var listItemAmount = $('.amount', listItem);
+  listItemAmount.html(item.FeeAmount);
+  var listItemDesc = $('.description', listItem);
+  listItemDesc.html(item.FeeDescription);
+  $('#dataList').append(listItem);
+}
+    </script>
+</body>
+</html>
