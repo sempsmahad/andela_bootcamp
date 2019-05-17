@@ -6,7 +6,7 @@ body{
 }
 * {box-sizing: border-box;}
 .container{
-    padding: 16px;
+    padding: 10px;
     width: 80%;
     margin:auto;
     overflow: hidden;    
@@ -230,7 +230,7 @@ footer{
 .topBs #sort{
     float: center; 
 } 
-@media(max-width:768px){
+@media(max-width:1124px){
    header #branding,
    header nav,
    header nav li{
@@ -249,7 +249,7 @@ footer{
   }
 
 }
-@media(max-width:500px){
+@media(max-width:773px){
     header #branding,
     header nav,
     header nav li{
