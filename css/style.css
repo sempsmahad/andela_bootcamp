@@ -87,6 +87,19 @@ header a:hover{
     top: 0px;
     right: 0px;
 }
+.car .sold:hover{
+    width: 45px;
+    height: 45px;
+    padding-top: 5px;
+    padding-right: 5px;
+   
+}
+.car .delete:hover{
+    width: 45px;
+    height: 45px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+}
 .cars{   
         display: grid;
         grid-template-columns: auto auto auto;
