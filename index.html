@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="buy and sell cars at your own desired price">
+  <meta name="keywords"
+    content="buy car,cars sale,cars,used cars,olx for cars,cheap cars,automart,auto mart,cheap cars in uganda">
+  <meta name="author" content="muhammad ssempala">
+  <title>AutoMart | Welcome</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <header >
+      <div class="container">
+    <div id="branding">
+    <h1>AutoMart</h1></div>
+      <nav>
+        <ul id="nav_bar">
+          <li class="btn current"><a href="index.html">Home</a></li>
+          <li><a class="btn" href="myAds.html">My Ads</a></li>
+          <li><a class="btn" href="orders.html">Orders</a></li>
+          <li><a class="btn" href="#favourites">Favourites</a></li>
+          <li><a class="btn" href="#profile">Profile</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button>
+
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" action="/action_page.php">
+    <div class="container">
+      <h1>Sign Up</h1>
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+         
+      <label for="psw-repeat"><b>First Name</b></label>
+      <input type="password" placeholder="First Name" name="psw-repeat" required>
+      
+      <label for="psw-repeat"><b>Last Name</b></label>
+      <input type="password" placeholder="Last Name" name="psw-repeat" required>
+      
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+   
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Login</button>
+
+<div id="id02" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="img_avatar2.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+  <section class="first-sect">
+    <div class="container">
+      <button class="topBs" id="filter" type="button">filter</button>
+      <button class="topBs" id="sort" type="button">sort</button>
+      <button class="topBs" id="sell" type="button" onclick="location.href='sell.html';">sell</button>
+
+      <div class="cars">
+        <div class="car" >          
+          <h3>CAR NAME</h3>
+          <h4>PRICE</h4>
+          <h5>YEAR</h5>
+          <h6>BODY TYPE</h6>
+        </div>
+        <div class="car">
+          <h3>CAR NAME</h3>
+          <h4>PRICE</h4>
+          <h5>YEAR</h5>
+          <h6>BODY TYPE</h6>
+        </div>
+        <div class="car">
+          <h3>CAR NAME</h3>
+          <h4>PRICE</h4>
+          <h5>YEAR</h5>
+          <h6>BODY TYPE</h6>
+        </div>
+        <div class="car">
+          <h3>CAR NAME</h3>
+          <h4>PRICE</h4>
+          <h5>YEAR</h5>
+          <h6>BODY TYPE</h6>
+        </div>
+        <div class="car">
+          <h3>CAR NAME</h3>
+          <h4>PRICE</h4>
+          <h5>YEAR</h5>
+          <h6>BODY TYPE</h6>
+        </div>
+        <div class="car">
+          <h3>CAR NAME</h3>
+          <h4>PRICE</h4>
+          <h5>YEAR</h5>
+          <h6>BODY TYPE</h6>
+        </div>
+        <div class="car">
+          <h3>CAR NAME</h3>
+          <h4>PRICE</h4>
+          <h5>YEAR</h5>
+          <h6>BODY TYPE</h6>
+        </div>
+        <div class="car">
+          <h3>CAR NAME</h3>
+          <h4>PRICE</h4>
+          <h5>YEAR</h5>
+          <h6>BODY TYPE</h6>
+        </div>
+        <div class="car">
+          <h3>CAR NAME</h3>
+          <h4>PRICE</h4>
+          <h5>YEAR</h5>
+          <h6>BODY TYPE</h6>
+        </div>
+        <div class="car">
+          <h3>CAR NAME</h3>
+          <h4>PRICE</h4>
+          <h5>YEAR</h5>
+          <h6>BODY TYPE</h6>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <p>AutoMart , Andela Rwanda,copyright &copy; 2019</p>
+  </footer>
+  <script>
+    // Add active class to the current button (highlight it)
+    var header = document.getElementById("nav_bar");
+    var btns = header.getElementsByTagName("li");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function () {
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+    }
+    // Get the modal
+var modal1 = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal1) {
+    modal.style.display = "none";
+  }
+}
+var modal2 = document.getElementById('id02');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal2) {
+        modal.style.display = "none";
+    }
+}
+  </script>
+</body>
+
+</html>
